@@ -7,7 +7,7 @@ let rada = document.getElementById('rada')
 let ct = document.getElementById('ct')
 let glt = document.getElementById('glt')
 let btn = document.getElementById('btn')
-
+let out = document.getElementById('out')
 btn.onclick = () => {
     if (goc.value !== '') {
 
@@ -22,7 +22,7 @@ btn.onclick = () => {
         values.forEach(e => {
             currentGoc = currentGoc + (currentGoc * e) / 100
         });
-        console.log(currentGoc);
+        out.innerHTML = currentGoc
     } else {
         alert('Nhập hộ cái chỉ số gốc cái!')
     }
